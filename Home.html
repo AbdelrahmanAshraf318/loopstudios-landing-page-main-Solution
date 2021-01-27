@@ -1,43 +1,157 @@
 <!DOCTYPE html>
 <html lang="US-en">
-    <head>
-        <meta charset="utf-8">
-        <title>Frontend Mentor | Loopstudios</title>
-        <!-- Add the icon before the title -->
-        <link rel="icon" href="icon\favicon-32x32.png" type="image/x-icon">
 
-        <link rel="stylesheet" type="text/css" href="Styles\style.css">
+<head>
+    <meta charset="utf-8">
+    <title>Frontend Mentor | Loopstudios</title>
+    <!-- Add the icon before the title -->
+    <link rel="icon" href="icon\favicon-32x32.png" type="image/x-icon">
 
-        <!-- Bootstrap -->
-        <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0/dist/css/bootstrap.min.css">
-	    <script type="text/javascript" src="bootstrap-4.0.0/js/tests/vendor/jquery-1.9.1.min.js"></script>
-	    <script type="text/javascript" src="bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
-	    <script type="text/javascript" src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
-        
-        <!-- fontowesome -->
-		<link rel="stylesheet" type="text/css" href="fontawesome/css/fontawesome.min.css">
-		<link rel="stylesheet" type="text/css" href="fontawesome/css/brands.css">
-		<link rel="stylesheet" type="text/css" href="fontawesome/css/solid.css">
+    <link rel="stylesheet" type="text/css" href="Styles\style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    </head>
-    <body>
-        <section id="interface" style="background-image: url('desktop/image-hero.jpg');">
-            <header id="nav">
-                <div id="Loopstudios"><a href="#Home" id="LoopstudiosLink">loopstudios</a></div>
-                <div id="navBarLinks">
-                    <a style="text-decoration: none; color: white;" href="#">Home</a>
-                    <a style="text-decoration: none; color: white;padding-left: 20px;" href="#">About</a>
-                    <a style="text-decoration: none; color: white;padding-left: 20px;" href="#">Events</a>
-                    <a style="text-decoration: none; color: white;padding-left: 20px;" href="#">Supports</a>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="WOW-master\css\libs\animate.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="bootstrap-4.0.0/js/tests/vendor/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
+    <script type="text/javascript" src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- fontowesome -->
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/brands.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/solid.css">
+
+</head>
+
+<body>
+
+    <div class="interface wow bounceInUp" style="background-image: url('desktop/image-hero.jpg');">
+        <header id="nav">
+            <div class="Loopstudios"><a href="#Home" class="LoopstudiosLink">loopstudios</a></div>
+            <div class="navBarLinks">
+                <a style="text-decoration: none; color: white;" href="#">Home</a>
+                <a style="text-decoration: none; color: white;padding-left: 20px;" href="#">About</a>
+                <a style="text-decoration: none; color: white;padding-left: 20px;" href="#">Events</a>
+                <a style="text-decoration: none; color: white;padding-left: 20px;" href="#">Supports</a>
+            </div>
+        </header>
+        <div class="box" data-aos="fade-right">
+            <div id="text">
+                <p>IMMERSIVE</p>
+                <p>EXPERIENCES THAT</p>
+                <p>DELIVER</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="leader" style="vertical-align: baseline;font: inherit;">
+        <div id="theImg">
+            <img src="desktop/image-interactive.jpg">
+        </div>
+        <div id="leaderContent">
+            <h1 style="font-size: 30px;margin-left: 230px;">THE LEADER IN INTERACTIVE VR</h1>
+            <p style="text-align: center;color: grey;font-size: 20px;margin-left: 100px;padding-top: 20px;">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+        </div>
+    </section>
+
+    <section class="pictures">
+        <h2>OUR CREATIONS</h2>
+        <button type="button " class="btn btn-outline-dark ">SEEALL</button>
+        <div class="container " style="padding-top: 50px; ">
+            <div class="row ">
+                <div class="col-3 ">
+                    <img src="desktop\image-deep-earth.jpg ">
+                    <div class="bottom ">
+                        DEEP EARTH
+                    </div>
                 </div>
-            </header>
-            <div id="box">
-                <div id="text">
-                    <p>IMMERSIVE</p>
-                    <p>EXPERIENCES THAT</p>
-                    <p>DELIVER</p>
+                <div class="col-3 ">
+                    <img src="desktop\image-night-arcade.jpg ">
+                    <div class="bottom ">
+                        NIGHT ARCADE
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <img src="desktop\image-soccer-team.jpg ">
+                    <div class="bottom ">
+                        SOCCER TEAM VR
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <img src="desktop\image-grid.jpg ">
+                    <div class="bottom ">
+                        THE GRID
+                    </div>
                 </div>
             </div>
-        </section>
-    </body>
+        </div>
+        <div id="anotherContent" class="container" style="padding-top: 50px;display: none; ">
+            <div class="row ">
+                <div class="col-3 ">
+                    <img src="desktop\image-curiosity.jpg ">
+                    <div class="bottom ">
+                        THE CURIOSITY
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <img src="desktop\image-fisheye.jpg ">
+                    <div class="bottom ">
+                        MAKE IT FISHEYE
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <img src="desktop\image-from-above.jpg ">
+                    <div class="bottom ">
+                        FROM UP ABOVE VR
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <img src="desktop\image-pocket-borealis.jpg ">
+                    <div class="bottom ">
+                        POCKET BOREALIS
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <div style="padding: 50px;">
+            <div class="Loopstudios"><a href="#Home" class="LoopstudiosLink">loopstudios</a></div>
+            <div class="navBarLinks">
+                <a style="text-decoration: none; color: white;" href="#">Home</a>
+                <a style="text-decoration: none; color: white;padding-left: 20px;" href="#">About</a>
+                <a style="text-decoration: none; color: white;padding-left: 20px;" href="#">Events</a>
+                <a style="text-decoration: none; color: white;padding-left: 20px;" href="#">Supports</a>
+            </div>
+        </div>
+
+        <div>
+            <p class="" style="display: inline-block;margin-left: 50px;color: white;">© 2021 Loopstudios. All rights reserved.</p>
+            <div class="" style="display: inline-block;margin-left: 700px;">
+                <a style="text-decoration: none; color: white;" href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a style="text-decoration: none; color: white;padding-left: 20px;" href="#"><i class="fab fa-pinterest-p fa-2x"></i></a>
+                <a style="text-decoration: none; color: white;padding-left: 20px;" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a style="text-decoration: none; color: white;padding-left: 20px;" href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js " integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin=" anonymous "></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script src="javaScript\home.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="WOW-master\dist\wow.js "></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
 </html>
